@@ -1,0 +1,64 @@
+body{
+  background-color: grey;
+}
+
+
+.head{
+    font-size: 30px;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divmain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@font-face {
+  font-family: 'DSEG7ClassicDot';
+  src: url('./fonts/DSEG7Classic-Regular.woff2') format('woff2'),
+       url('./fonts/DSEG7Classic-Regular.woff') format('woff');
+}
+#clock{
+  font-size: 180px;
+  color: brown;
+  font-family: 'DSEG7ClassicDot', monospace;
+}
+
+.main{
+  border-radius: 3rem;
+  width: 800px;
+  height: 300px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 50px;
+}
+
+.foot {
+  font-size: 25px;
+  color: rgb(146, 12, 144);
+  white-space: nowrap;
+  position: absolute;
+  animation: moveX 5s linear infinite alternate;
+}
+
+
+@keyframes moveX {
+  0% {
+    left: 0;
+  }
+  100% {
+    transform: translateX(calc(100vw - 100%));
+  }
+}
